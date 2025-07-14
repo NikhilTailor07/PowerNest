@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @tailwind base;
 @tailwind components;
@@ -28,3 +29,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+=======
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+>>>>>>> 09f2716aa4ced04db4e933c4d7bad16a0953771c

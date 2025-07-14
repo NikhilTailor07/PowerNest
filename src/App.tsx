@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import React from 'react';
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import SignUp from'./components/SignUp';
@@ -34,6 +35,12 @@ import { useState } from 'react';
 import LoginForm from './components/LoginForm';
 import SignUpForm from './components/SignUpForm';
 import Dashboard from './components/Dashboard';
+=======
+import React from 'react';
+import { useState } from 'react';
+import LoginForm from './components/LoginForm';
+import SignUpForm from './components/SignUpForm';
+>>>>>>> 09f2716aa4ced04db4e933c4d7bad16a0953771c
 import ForgotPasswordForm from './components/ForgotPasswordForm';
 import RoleSelectionForm from './components/RoleSelectionForm';
 import WelcomeBackPage from './components/WelcomeBackPage';
@@ -45,7 +52,11 @@ import AssessmentIntroduction from './components/AssessmentIntroduction';
 import PsychologicalAssessment from './components/PsychologicalAssessment';
 import CompletionPage from './components/CompletionPage';
 
+<<<<<<< HEAD
 type AppState = 'login' | 'signup' | 'forgot-password' | 'role-selection' | 'welcome-back' | 'basic-info' | 'startup-profile' | 'document-upload' | 'add-team' | 'assessment-intro' | 'assessment' | 'complete'|'dashboard';
+=======
+type AppState = 'login' | 'signup' | 'forgot-password' | 'role-selection' | 'welcome-back' | 'basic-info' | 'startup-profile' | 'document-upload' | 'add-team' | 'assessment-intro' | 'assessment' | 'complete';
+>>>>>>> 09f2716aa4ced04db4e933c4d7bad16a0953771c
 
 function App() {
   const [currentState, setCurrentState] = useState<AppState>('login');
@@ -77,8 +88,12 @@ function App() {
   };
 
   const handleProceedToApp = () => {
+<<<<<<< HEAD
     // setCurrentState('basic-info');
      setCurrentState('dashboard');
+=======
+    setCurrentState('basic-info');
+>>>>>>> 09f2716aa4ced04db4e933c4d7bad16a0953771c
   };
 
   const handleBasicInfoNext = (data: any) => {
@@ -132,7 +147,11 @@ function App() {
 
   const handleGoToDashboard = () => {
     console.log('Redirecting to dashboard...');
+<<<<<<< HEAD
     setCurrentState('dashboard'); 
+=======
+    // In a real app, this would redirect to the main dashboard
+>>>>>>> 09f2716aa4ced04db4e933c4d7bad16a0953771c
   };
   const renderCurrentState = () => {
     switch (currentState) {
@@ -218,8 +237,11 @@ function App() {
             onGoToDashboard={handleGoToDashboard}
           />
         );
+<<<<<<< HEAD
         case 'dashboard':
       return <Dashboard userData={userData} />;
+=======
+>>>>>>> 09f2716aa4ced04db4e933c4d7bad16a0953771c
       default:
         return (
           <LoginForm 

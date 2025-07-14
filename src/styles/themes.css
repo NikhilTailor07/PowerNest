@@ -1,0 +1,18 @@
+:root {
+  /* Light Theme (Default) */
+  --primary-color: #0055ff;
+  --background-color: #ffffff;
+  --text-color: #222222;
+  --subtext-color: #666666;
+  --stroke-color: #e0e0e0;
+}
+
+[data-theme="dark"] {
+  --primary-color: #3399ff;
+  --background-color: #121212;
+  --text-color: #f0f0f0;
+  --subtext-color: #aaaaaa;
+  --stroke-color: #303030;
+}
+
+
